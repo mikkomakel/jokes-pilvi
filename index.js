@@ -15,6 +15,9 @@ app.get('/', (req, res) => {
   res.send('Try /jokes/random, or /jokes/ten , /jokes/random/any-number');
 });
 
+app.get('/jokes/count', (req, res) => {
+  res.json({"jokes":count});
+});
 app.get('/ping', (req, res) => {
   res.send('pong');
 });
